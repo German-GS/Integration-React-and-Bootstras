@@ -1,0 +1,18 @@
+.card-deck{
+    padding-top: 10px;
+    padding-bottom: 4px;
+}
+
+.card{
+    width: 18rem;
+}
+
+
+.imgCard{
+    height: 15em;
+    width: 20em;
+}
+
+.cardBody{
+    height: 35em !important;
+}
