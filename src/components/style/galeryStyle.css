@@ -4,15 +4,16 @@
 }
 
 .card{
-    width: 18rem;
+    width: 100%;
+    height: auto;
 }
 
 
 .imgCard{
-    height: 15em;
-    width: 20em;
+    height: auto;
+    width:100%;
 }
 
 .cardBody{
-    height: 35em !important;
+    height: auto !important;
 }

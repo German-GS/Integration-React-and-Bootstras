@@ -1,47 +1,25 @@
 import React from "react";
-import {Button} from "react-bootstrap";
-import Logo from '../img/Logo 1.png';
-import './style/navStyle.css'
+import Logo from "../img/Logo 1.png";
+import "./style/navStyle.css";
+import Navbar from "react-bootstrap/Navbar";
+import Nav from 'react-bootstrap/Nav'
+
 
 class Navigation extends React.Component {
   render() {
     return (
-  
-      // <div className="col-sm-12">
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark position-sticky fixed-top">
-          <a className="navbar-brand" href="#">
-            <img className="logo" src={Logo} alt="" srcSet=""/>
-          </a>
-          <Button
-            className="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </Button>
-          <div className="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-            <div className="navbar-nav">
-              <a className="nav-item nav-link active" href="#">
-                Home <span className="sr-only">(current)</span>
-              </a>
-              <a className="nav-item nav-link" href="#">
-                Galery
-              </a>
-              <a className="nav-item nav-link" href="#">
-                About Us
-              </a>
-              <a className="nav-item nav-link" href="#">
-                Contact Us
-              </a>
-            </div>
-          </div>
-        </nav>
-        
-      // </div>
+      <Navbar sticky='top' bg="dark" variant="dark" expand="lg">
+        <Navbar.Brand> <a href="#"><img className="logo" src={Logo} alt=""/></a> </Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="mr-auto">
+            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="#link">Galery</Nav.Link>
+            <Nav.Link href="#link">About Us</Nav.Link>
+            <Nav.Link href="#link">Contact Us</Nav.Link>            
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
     );
   }
 }
